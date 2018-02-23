@@ -8,7 +8,7 @@ public class PlayerTurn : Turn {
 
     public override void StartTurn()
     {
-        board.EnableSlots(position => game.Mark(position, symbol));
+        board.EnableSlots();
     }
 
     public override bool NotifyRemote { get { return notifyRemote; } }

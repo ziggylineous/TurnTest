@@ -14,4 +14,4 @@ MonoBehaviour:
   symbol: 0
   shape: {fileID: 1453957580416136, guid: c7a5a91db660a4a60abd9d16499d7982, type: 2}
   color: {r: 1, g: 1, b: 1, a: 0}
-  icon: {fileID: 1453957580416136, guid: c7a5a91db660a4a60abd9d16499d7982, type: 2}
+  icon: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}

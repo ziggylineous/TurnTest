@@ -13,8 +13,8 @@ public class Slot : MonoBehaviour {
     public SymbolDescriptor cross;
     public SymbolDescriptor circle;
     public Vector2Int position;
-
-    public Action<Game.Position> inputHandler;
+	
+    public MarkCommand mark;
 
     private Collider2D thisCollider;
     private SymbolDescriptor symbol;
@@ -25,7 +25,7 @@ public class Slot : MonoBehaviour {
 		thisCollider = GetComponent<Collider2D>();
         Empty();
 	}
-	
+
 
 
 
@@ -54,19 +54,18 @@ public class Slot : MonoBehaviour {
         BaseSetup(empty, true);
     }
 
-    public void Mark(SymbolDescriptor sym)
+    public void Mark(SymbolDescriptor symbol)
     {
-        BaseSetup(sym, false);
+        BaseSetup(symbol, false);
     }
 
 
 
 
     // input
-    public void EnableMarkInput(Action<Game.Position> inputHandler_)
+    public void EnableMarkInput()
     {
         thisCollider.enabled = symbol.IsEmpty;
-        this.inputHandler = inputHandler_;
     }
 	
     public void DisableMarkInput()
@@ -76,7 +75,10 @@ public class Slot : MonoBehaviour {
 
     private void OnMouseUp()
     {
-        Debug.Log("onMouseUp " + gameObject.name);
-        inputHandler(new Game.Position(position.y, position.x));
+        mark.Mark(this);
+    }
+
+    public MarkCommand MarkCmd {
+        set { mark = value; }
     }
 }

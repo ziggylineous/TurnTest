@@ -1,4 +1,5 @@
 ﻿using System;
+using Game;
 using UnityEngine;
 
 public class Board : MonoBehaviour {
@@ -20,9 +21,9 @@ public class Board : MonoBehaviour {
         board.Clear();
     }
 
-    public void EnableSlots(Action<Game.Position> inputHandler)
+    public void EnableSlots()
     {
-        Array.ForEach(slots, slot => slot.EnableMarkInput(inputHandler));
+        Array.ForEach(slots, slot => slot.EnableMarkInput());
     }
 
     public void DisableSlots()
@@ -30,15 +31,9 @@ public class Board : MonoBehaviour {
         Array.ForEach(slots, slot => slot.DisableMarkInput());
     }
 
-    public void Mark(Game.Position position, SymbolDescriptor symbol)
+    public void Mark(Game.Position position, Game.Symbol symbol)
     {
-        board.Mark(position, symbol.symbol);
-        Slot slotWithPosition = Array.Find(slots,
-                                           slot => 
-           (slot.position.y == position.Row) &&
-           (slot.position.x == position.Col)
-        );
-        slotWithPosition.Mark(symbol);
+        board.Mark(position, symbol);
     }
 
     public bool HasWon(Game.Position position)
@@ -46,9 +41,20 @@ public class Board : MonoBehaviour {
         return board.HasWon(position);
     }
 
+    public Slot SlotAt(Position position)
+    {
+        return Array.Find(
+            slots,
+            slot =>
+            (slot.position.y == position.Row) &&
+            (slot.position.x == position.Col)
+        );
+    }
+
     public bool HasAnyEmpty
     {
         get { return board.HasAnyEmpty; }
     }
 
+    public Slot[] Slots { get { return slots; } }
 }

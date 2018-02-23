@@ -7,7 +7,7 @@ public class SymbolDescriptor : ScriptableObject
     public Game.Symbol symbol;
     public GameObject shape;
     public Color color;
-    public GameObject icon;
+    public Sprite icon;
 
     public static SymbolDescriptor Circle;
     public static SymbolDescriptor Cross;

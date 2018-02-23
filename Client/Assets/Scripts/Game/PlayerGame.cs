@@ -9,14 +9,14 @@ public class PlayerGame : MonoBehaviour {
     private Turn[] turns = new Turn[2];
     private int currentTurnIndex;
     private Board board;
-    public SymbolVar currentSymbol;
     public GameObject resultPopupPrefab;
     public GameMode gameMode;
-
+    public MarkCommand mark;
 
     public void Start()
     {
 		board = transform.GetComponentInChildren<Board>();
+        mark = GetComponent<MarkCommand>();
 
         Dictionary<GameMode.Mode, System.Func<Turn>> otherPlayerTurnFactory = new Dictionary<GameMode.Mode, System.Func<Turn>>
         {
@@ -69,17 +69,12 @@ public class PlayerGame : MonoBehaviour {
     private void NextTurn()
     {
         currentTurnIndex = (currentTurnIndex + 1) % turns.Length;
+		mark.currentSymbol.Set(CurrentTurn.symbol);
         CurrentTurn.StartTurn();
-        currentSymbol.Set(CurrentTurn.symbol);
     }
 
-    public void Mark(Game.Position position, SymbolDescriptor symbol)
+    public void EndTurn(Game.Position position)
     {
-        board.Mark(position, symbol);
-
-        if (CurrentTurn.NotifyRemote)
-            networkHelper.SendPosition(position);
-
         if (board.HasWon(position))
         {
             Win(CurrentTurn);
@@ -172,5 +167,5 @@ public class PlayerGame : MonoBehaviour {
         Debug.LogFormat("Received wrong message {0} [awaiting {1}]", wrongMessage, awaitedMessage);
     }
 
-    private Turn CurrentTurn { get { return turns[currentTurnIndex]; } }
+    public Turn CurrentTurn { get { return turns[currentTurnIndex]; } }
 }

@@ -264,6 +264,11 @@ Prefab:
       propertyPath: OnPress.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 114156646436175642, guid: 6ffdba9a4f0f44717978967bfd6ddbd8,
+        type: 2}
+      propertyPath: mark
+      value: 
+      objectReference: {fileID: 1810030006}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6ffdba9a4f0f44717978967bfd6ddbd8, type: 2}
   m_IsPrefabParent: 0
@@ -350,6 +355,11 @@ Prefab:
       propertyPath: OnPress.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 114156646436175642, guid: 6ffdba9a4f0f44717978967bfd6ddbd8,
+        type: 2}
+      propertyPath: mark
+      value: 
+      objectReference: {fileID: 1810030006}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6ffdba9a4f0f44717978967bfd6ddbd8, type: 2}
   m_IsPrefabParent: 0
@@ -431,6 +441,11 @@ Prefab:
       propertyPath: OnPress.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 114156646436175642, guid: 6ffdba9a4f0f44717978967bfd6ddbd8,
+        type: 2}
+      propertyPath: mark
+      value: 
+      objectReference: {fileID: 1810030006}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6ffdba9a4f0f44717978967bfd6ddbd8, type: 2}
   m_IsPrefabParent: 0
@@ -517,6 +532,11 @@ Prefab:
       propertyPath: OnPress.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 114156646436175642, guid: 6ffdba9a4f0f44717978967bfd6ddbd8,
+        type: 2}
+      propertyPath: mark
+      value: 
+      objectReference: {fileID: 1810030006}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6ffdba9a4f0f44717978967bfd6ddbd8, type: 2}
   m_IsPrefabParent: 0
@@ -685,7 +705,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 831960483}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 683, y: 416, z: 0}
+  m_LocalPosition: {x: 647, y: 416, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1071085917}
@@ -833,6 +853,11 @@ Prefab:
       propertyPath: OnPress.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 114156646436175642, guid: 6ffdba9a4f0f44717978967bfd6ddbd8,
+        type: 2}
+      propertyPath: mark
+      value: 
+      objectReference: {fileID: 1810030006}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6ffdba9a4f0f44717978967bfd6ddbd8, type: 2}
   m_IsPrefabParent: 0
@@ -999,6 +1024,11 @@ Prefab:
       propertyPath: OnPress.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 114156646436175642, guid: 6ffdba9a4f0f44717978967bfd6ddbd8,
+        type: 2}
+      propertyPath: mark
+      value: 
+      objectReference: {fileID: 1810030006}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6ffdba9a4f0f44717978967bfd6ddbd8, type: 2}
   m_IsPrefabParent: 0
@@ -1147,6 +1177,11 @@ Prefab:
       propertyPath: OnPress.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 114156646436175642, guid: 6ffdba9a4f0f44717978967bfd6ddbd8,
+        type: 2}
+      propertyPath: mark
+      value: 
+      objectReference: {fileID: 1810030006}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6ffdba9a4f0f44717978967bfd6ddbd8, type: 2}
   m_IsPrefabParent: 0
@@ -1238,6 +1273,11 @@ Prefab:
       propertyPath: OnPress.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 114156646436175642, guid: 6ffdba9a4f0f44717978967bfd6ddbd8,
+        type: 2}
+      propertyPath: mark
+      value: 
+      objectReference: {fileID: 1810030006}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6ffdba9a4f0f44717978967bfd6ddbd8, type: 2}
   m_IsPrefabParent: 0
@@ -1304,6 +1344,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1810030005}
   - component: {fileID: 1810030004}
+  - component: {fileID: 1810030006}
   m_Layer: 0
   m_Name: Game
   m_TagString: Untagged
@@ -1323,10 +1364,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   networkHelper: {fileID: 11400000, guid: dbbea667bc1194054883dd2f42e660bf, type: 2}
-  currentSymbol: {fileID: 11400000, guid: c3c051c78d5284ad688a8cc628dfccce, type: 2}
   resultPopupPrefab: {fileID: 1660181179543490, guid: 882404620b7f14afc9aedac6ef255b0a,
     type: 2}
   gameMode: {fileID: 11400000, guid: 290f8abc0157d4f50802724fcfba9879, type: 2}
+  mark: {fileID: 1810030006}
 --- !u!4 &1810030005
 Transform:
   m_ObjectHideFlags: 0
@@ -1341,6 +1382,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1810030006
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1810030003}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 703e875520dc04e18b9b4e898c871e5d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  game: {fileID: 1810030004}
+  board: {fileID: 1791962278}
+  currentSymbol: {fileID: 11400000, guid: c3c051c78d5284ad688a8cc628dfccce, type: 2}
+  networkHelper: {fileID: 11400000, guid: dbbea667bc1194054883dd2f42e660bf, type: 2}
 --- !u!1001 &1813617445
 Prefab:
   m_ObjectHideFlags: 0
@@ -1414,6 +1470,11 @@ Prefab:
       propertyPath: OnPress.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 114156646436175642, guid: 6ffdba9a4f0f44717978967bfd6ddbd8,
+        type: 2}
+      propertyPath: mark
+      value: 
+      objectReference: {fileID: 1810030006}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6ffdba9a4f0f44717978967bfd6ddbd8, type: 2}
   m_IsPrefabParent: 0

@@ -14,7 +14,8 @@ public class CurrentTurnDisplay : MonoBehaviour {
 
     private void RefreshCurrentSymbol(SymbolDescriptor newCurrentSymbol)
     {
-        SymbolImage.sprite = currentSymbol.Value.shape.GetComponent<SpriteRenderer>().sprite;
+        SymbolImage.sprite = currentSymbol.Value.icon;
+        SymbolImage.color = currentSymbol.Value.color;
         SymbolText.text = currentSymbol.Value.symbol.ToString();
     }
 

@@ -37,7 +37,7 @@ public class ResultPopup : MonoBehaviour {
 		tieDisplay.SetActive(false);
 		winDisplay.SetActive(true);
 		SetResultText(winDisplay, "Won");
-		winDisplay.GetComponentInChildren<Image>().sprite = winner.shape.GetComponent<SpriteRenderer>().sprite;
+		winDisplay.GetComponentInChildren<Image>().sprite = winner.icon;
 	}
 	
     public void TiePopup(PlayerGame game_)
